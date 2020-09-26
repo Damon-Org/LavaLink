@@ -16,7 +16,7 @@ export default class LavaLink extends BaseModule {
     }
 
     setup() {
-        this._conn = new pkg.Shoukaku(this.mainClient, this.auth.credentials.lavalink, {
+        this._conn = new pkg.Shoukaku(this._m, this.auth.credentials.lavalink, {
             moveOnDisconnect: false,
             resumable: 'lavaRetryTheRedemptionArc',
             resumableTimeout: 30,
