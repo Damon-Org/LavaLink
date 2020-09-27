@@ -6,7 +6,7 @@ export default class LavaLink extends BaseModule {
         super(main);
 
         this.register(LavaLink, {
-            name: 'lavaLink',
+            name: 'lavalink',
             scope: 'global'
         });
     }
