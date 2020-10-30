@@ -6,8 +6,7 @@ export default class LavaLink extends BaseModule {
         super(main);
 
         this.register(LavaLink, {
-            name: 'lavalink',
-            scope: 'global'
+            name: 'lavalink'
         });
     }
 
@@ -15,7 +14,7 @@ export default class LavaLink extends BaseModule {
         return this._conn;
     }
 
-    setup() {
+    init() {
         this._conn = new pkg.Shoukaku(this._m, this.auth.credentials.lavalink, {
             moveOnDisconnect: false,
             resumable: 'lavaRetryTheRedemptionArc',
